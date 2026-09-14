@@ -1,0 +1,12 @@
+name = "my-private-cloud"
+main = "src/index.mjs"
+compatibility_date = "2026-09-05"
+compatibility_flags = ["nodejs_compat"]
+
+[triggers]
+crons = ["*/5 * * * *"]
+
+[[d1_databases]]
+binding = "PRIVATE_CLOUD_DB"
+database_name = "my-private-cloud"
+database_id = "6d5cb109-5ddc-4002-892e-b76a80498e15"
